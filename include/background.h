@@ -72,6 +72,8 @@ struct background
 
   double Gamma0_dmdrf;  /**< \f$ \Gamma_{0 dmdr} \f: dm-drf interaction strength*/
 
+  double Gamma0_pwr;  /**< \f$ \Gamma0 ~ T^Gamma0_pwr \f: dm-drf interaction strength scaling power*/
+
 
   double Omega0_dcdmdr; /**< \f$ \Omega_{0 dcdm}+\Omega_{0 dr} \f$: decaying cold dark matter (dcdm) decaying to dark radiation (dr) */
 

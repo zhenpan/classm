@@ -1580,9 +1580,9 @@ static char __pyx_k_No_density_Cl_computed[] = "No density Cl computed";
 static char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
 static char __pyx_k_Can_only_compute_up_to_lmax_d[] = "Can only compute up to lmax=%d";
 static char __pyx_k_get_current_derived_parameters[] = "get_current_derived_parameters";
-static char __pyx_k_home_zhenpan_code_class_python[] = "/home/zhenpan/code/class/python/classy.pyx";
 static char __pyx_k_Raised_when_Class_could_not_com[] = "\n    Raised when Class could not compute the cosmology at this point.\n\n    This will be caught by the parameter extraction code to give an extremely\n    unlikely value to this point\n    ";
 static char __pyx_k_Raised_when_Class_failed_to_und[] = "\n    Raised when Class failed to understand one or more input parameters.\n\n    This case would not raise any problem in Class default behaviour. However,\n    for parameter extraction, one has to be sure that all input parameters were\n    understood, otherwise the wrong cosmological model would be selected.\n    ";
+static char __pyx_k_home_zhenpan_code_classm_python[] = "/home/zhenpan/code/classm/python/classy.pyx";
 static char __pyx_k_module_classy_synopsis_Python_w[] = "\n.. module:: classy\n    :synopsis: Python wrapper around CLASS\n.. moduleauthor:: Karim Benabed <benabed@iap.fr>\n.. moduleauthor:: Benjamin Audren <benjamin.audren@epfl.ch>\n.. moduleauthor:: Julien Lesgourgues <lesgourg@cern.ch>\n\nThis module defines a class called Class. It is used with Monte Python to\nextract cosmological parameters.\n\n";
 static char __pyx_k_s_was_not_recognized_as_a_deriv[] = "%s was not recognized as a derived parameter";
 static char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
@@ -1700,7 +1700,7 @@ static PyObject *__pyx_n_s_getData;
 static PyObject *__pyx_n_s_get_current_derived_parameters;
 static PyObject *__pyx_n_s_get_mcmc_parameters;
 static PyObject *__pyx_n_s_h;
-static PyObject *__pyx_kp_s_home_zhenpan_code_class_python;
+static PyObject *__pyx_kp_s_home_zhenpan_code_classm_python;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_init;
 static PyObject *__pyx_n_s_input;
@@ -24119,7 +24119,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_get_current_derived_parameters, __pyx_k_get_current_derived_parameters, sizeof(__pyx_k_get_current_derived_parameters), 0, 0, 1, 1},
   {&__pyx_n_s_get_mcmc_parameters, __pyx_k_get_mcmc_parameters, sizeof(__pyx_k_get_mcmc_parameters), 0, 0, 1, 1},
   {&__pyx_n_s_h, __pyx_k_h, sizeof(__pyx_k_h), 0, 0, 1, 1},
-  {&__pyx_kp_s_home_zhenpan_code_class_python, __pyx_k_home_zhenpan_code_class_python, sizeof(__pyx_k_home_zhenpan_code_class_python), 0, 0, 1, 0},
+  {&__pyx_kp_s_home_zhenpan_code_classm_python, __pyx_k_home_zhenpan_code_classm_python, sizeof(__pyx_k_home_zhenpan_code_classm_python), 0, 0, 1, 0},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_init, __pyx_k_init, sizeof(__pyx_k_init), 0, 0, 1, 1},
   {&__pyx_n_s_input, __pyx_k_input, sizeof(__pyx_k_input), 0, 0, 1, 1},
@@ -24657,7 +24657,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__49 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_message); if (unlikely(!__pyx_tuple__49)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 35; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__49);
   __Pyx_GIVEREF(__pyx_tuple__49);
-  __pyx_codeobj__50 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__49, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_zhenpan_code_class_python, __pyx_n_s_init, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__50)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 35; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_codeobj__50 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__49, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_zhenpan_code_classm_python, __pyx_n_s_init, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__50)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 35; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_tuple__51 = PyTuple_Pack(1, ((PyObject*)__pyx_kp_s_)); if (unlikely(!__pyx_tuple__51)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 35; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__51);
   __Pyx_GIVEREF(__pyx_tuple__51);
@@ -24672,7 +24672,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__52 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__52)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 38; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__52);
   __Pyx_GIVEREF(__pyx_tuple__52);
-  __pyx_codeobj__53 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_zhenpan_code_class_python, __pyx_n_s_str, 38, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__53)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 38; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_codeobj__53 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_zhenpan_code_classm_python, __pyx_n_s_str, 38, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__53)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 38; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;

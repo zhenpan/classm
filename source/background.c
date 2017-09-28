@@ -424,7 +424,7 @@ int background_functions(
     rho_tot += pvecback[pba->index_bg_rho_drf];
     p_tot += (1./3.) * pvecback[pba->index_bg_rho_drf];
     rho_r += pvecback[pba->index_bg_rho_drf];
-    pvecback[pba->index_bg_Gamma_dmdrf] = 1.e-7 * pba->Gamma0_dmdrf / pow(a_rel, 2);  /* Gamma = Gamma0 * (T/T0)^2 */
+    pvecback[pba->index_bg_Gamma_dmdrf] = 1.e-7 * pba->Gamma0_dmdrf / pow(a_rel, pba->Gamma0_pwr);  /* Gamma = Gamma0 * (T/T0)^pwr */
   }
 
 

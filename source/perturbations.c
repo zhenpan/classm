@@ -5042,7 +5042,8 @@ int perturb_timescale(
     if ((pba->has_drf) && (pba->Gamma0_dmdrf != 0.)) {
 
 	R_cdm   = 0.75*pvecback[pba->index_bg_rho_cdm]/ pvecback[pba->index_bg_rho_drf];
-	tau_drf = 1./(R_cdm * pvecback[pba->index_bg_a] * pvecback[pba->index_bg_Gamma_dmdrf]);   /*dm-drf momentum change timescale*/ 
+	tau_drf = 1./(pvecback[pba->index_bg_a] * pvecback[pba->index_bg_Gamma_dmdrf]);   /*dm-drf momentum change timescale*/ 
+	tau_drf = MIN(1., 1./R_cdm) * tau_drf ;                                           /*dm-drf momentum change timescale*/ 
 	*timescale = MIN(tau_drf, *timescale);                                             
     }
 

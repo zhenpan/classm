@@ -4990,6 +4990,8 @@ int perturb_timescale(
   double tau_h;
   /* (c) time scale of recombination, \f$ \tau_{\gamma} = 1/\kappa' \f$ */
   double tau_c;
+  /* (d) time scale of dm-drf coupling, \f$ \tau_{drf} = 1/(R_cdm*a*Gamma_dmdrf) \f$ */
+  double tau_drf, R_cdm;
 
   /* various pointers allowing to extract the fields of the
      parameter_and_workspace input structure */
@@ -5036,6 +5038,13 @@ int perturb_timescale(
   if ((ppt->has_scalars == _TRUE_) && (pppaw->index_md == ppt->index_md_scalars)) {
 
     *timescale = tau_h;
+
+    if ((pba->has_drf) && (pba->Gamma0_dmdrf != 0.)) {
+
+	R_cdm   = 0.75*pvecback[pba->index_bg_rho_cdm]/ pvecback[pba->index_bg_rho_drf];
+	tau_drf = 1./(R_cdm * pvecback[pba->index_bg_a] * pvecback[pba->index_bg_Gamma_dmdrf]);   /*dm-drf momentum change timescale*/ 
+	*timescale = MIN(tau_drf, *timescale);                                             
+    }
 
     if ((ppw->approx[ppw->index_ap_rsa] == (int)rsa_off) || (pba->has_ncdm == _TRUE_))
       *timescale = MIN(tau_k,*timescale);
