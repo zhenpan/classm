@@ -761,7 +761,7 @@ int input_read_parameters(
   }
 
   /* Gamma0_dmdrf ~ T^pwr */
-  class_call(parser_read_double(pfc,"Gamma0_pwr", &param1,&flag1,errmsg),
+  class_call(parser_read_int(pfc,"Gamma0_pwr", &param1,&flag1,errmsg),
              errmsg,
              errmsg);
   if (flag1 == _TRUE_) {
@@ -2892,7 +2892,7 @@ int input_default_params(
   pba->Omega0_ur = 3.046*7./8.*pow(4./11.,4./3.)*pba->Omega0_g;
   pba->Omega0_drf = 0.;
   pba->Gamma0_dmdrf = 0.;
-  pba->Gamma0_pwr = 2.;
+  pba->Gamma0_pwr = 2;
   pba->Omega0_b = 0.022032/pow(pba->h,2);
   pba->Omega0_cdm = 0.12038/pow(pba->h,2);
   pba->Omega0_dcdmdr = 0.0;
