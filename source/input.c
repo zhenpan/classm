@@ -761,7 +761,7 @@ int input_read_parameters(
   }
 
   /* Gamma0_dmdrf ~ T^pwr */
-  class_call(parser_read_int(pfc,"Gamma0_pwr", &param1,&flag1,errmsg),
+  class_call(parser_read_double(pfc,"Gamma0_pwr", &param1,&flag1,errmsg),
              errmsg,
              errmsg);
   if (flag1 == _TRUE_) {

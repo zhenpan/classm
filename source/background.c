@@ -425,12 +425,6 @@ int background_functions(
     p_tot += (1./3.) * pvecback[pba->index_bg_rho_drf];
     rho_r += pvecback[pba->index_bg_rho_drf];
     pvecback[pba->index_bg_Gamma_dmdrf] = 1.e-7 * pba->Gamma0_dmdrf / pow(a_rel, pba->Gamma0_pwr);  /* Gamma = Gamma0 * (T/T0)^pwr */
-    if (pba->Gamma0_pwr = 1) {
-	 pvecback[pba->index_bg_Gamma_dmdrf] = 1.e-5 * pba->Gamma0_dmdrf / pow(a_rel, pba->Gamma0_pwr);
-    }
-    if (pba->Gamma0_pwr = 3) {
-	 pvecback[pba->index_bg_Gamma_dmdrf] = 1.e-11 * pba->Gamma0_dmdrf / pow(a_rel, pba->Gamma0_pwr);
-    }
   }
 
 
